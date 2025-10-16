@@ -4,6 +4,8 @@
 | Name | Role | Bio | Enneagram/MBTI | Opportunities | Career Path |
 |------|------|-----|----------------|---------------|-------------|
 | Matthew Landon Andrews | Frontend Dev | CIS Major and Minor in Cybersecurity | Type 2 - The Helper, The Altruist | Great collaborator, avoids conflict with teamates | Pentester |
+|------|------|-----|----------------|---------------|-------------|
+| Bella Archer | TBC | IT major with a concentration in UX Design | Type 9 - The Peacemaker, The Mediator | TBC | UX/UI Designer |
 
 
 
