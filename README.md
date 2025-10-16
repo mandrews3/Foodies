@@ -1,6 +1,8 @@
 # 🍔 Foodies 
 
 ## 🫂 Team Members
+| Name | Role | Bio | Enneagram/MBTI | Opportunities | Career Path |
+|------|------|-----|----------------|---------------|-------------|
 | Matthew Landon Andrews | Frontend Dev | CIS Major and Minor in Cybersecurity | Type 2 - The Helper, The Altruist | Great collaborator, avoids conflict with teamates | Pentester |
 
 
