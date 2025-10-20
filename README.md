@@ -13,7 +13,9 @@
 
 ## 🪧 Product Overview
 
+APP NAME is a full stack web app designed to make food discovery smarter, easier, and more interactive. Start by uploading a photo of any food item, and our app will use AI-powered image recognition to instantly provide you with recipe suggestions, nutrition facts and other information about the food in your photo.
 
+This app addresses the need for accessible and intelligent meal insights. Whether you're unsure what's on your plate, what to remake a dish that you liked, or track your calories, this app makes it easy and engaging. It combines powerful frontend UI/UX with strong backend services and AI.
 
 ## 🐢 BLUF (Bottom Line Up Front) 
 **What the application does:**
