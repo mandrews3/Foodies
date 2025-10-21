@@ -84,6 +84,11 @@ Our research included: IN PROGRESS
 ---
 
 ## 🔗 Links
+### **Development Teams Github Profiles:**
+![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)[Landon] (https://github.com/mandrews3)
+[Isabella] (https://github.com/iarcher444)
+[Joshua] (https://github.com/joshuabrad03)
+[paridhi] (https://github.com/pmalhotra21)
 
 
 
