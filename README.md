@@ -72,8 +72,18 @@ Our research included: IN PROGRESS
 
 
 ---
+## 🖼️ Team Artifacts:
+** Meet our development team: **
+[
 
-## 🔗 Links & Artifacts
+
+
+
+
+
+---
+
+## 🔗 Links
 
 
 
