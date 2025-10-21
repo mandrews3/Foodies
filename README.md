@@ -6,6 +6,7 @@
 | Matthew Landon Andrews | Frontend Dev | CIS Major and Minor in Cybersecurity | Type 2 - The Helper, The Altruist | Great collaborator, avoids conflict with teamates | Pentester |
 | Bella Archer | Backend Dev | IT major with a concentration in UX Design | Type 9 - The Peacemaker, The Mediator | Great Communication, Loves to work with others | UX/UI Designer |
 | Joshua Bradley | UX Designer | IT major, concentration in HCI/UX | Type 2 - The Helper, The Altruist | Loves working in teams, willing to compromise when conflict arises | UX/Interaction Designer |
+| Paridhi Malhotra | Security Analyst / Backend Dev | BS in IT with a concentration in Cybersecurity | Type 5 - The Investigator (INTJ) | Analytical thinker, excels in problem solving and structured planning | Cybersecurity Analyst / SOC Specialist |
 
 
 
