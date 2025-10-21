@@ -1,0 +1,22 @@
+{
+  "name": "movie-watchlist-app",
+  "version": "1.0.0",
+  "description": "Full Stack CRUD Movie Watchlist Application - Dev Lab QUEBEC",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": ["nodejs", "express", "mongodb", "crud", "fullstack"],
+  "author": "Joshua Brad",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
