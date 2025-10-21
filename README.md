@@ -86,6 +86,7 @@ Our research included: IN PROGRESS
 
 ## 🔗 Links
 ### **Development Teams Github Profiles:**
+
 <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="40" alt="GitHub Logo">
 
 [Landon](https://github.com/mandrews3)
@@ -101,13 +102,16 @@ Our research included: IN PROGRESS
 
 
 ### **Development Teams Render Link:**
+[Render](Add Link Here)
 
 
 
 
 <img src="https://webimages.mongodb.com/_com_assets/cms/mongodb-logo-rgb-j6w271g1xn.jpg" alt="MongoDB Logo" width="200">
 
+
 ### **Development Teams MongoDB Link:**
+[MongoDB](add link here)
 
 
 
