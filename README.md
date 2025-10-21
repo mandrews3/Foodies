@@ -97,7 +97,7 @@ Our research included: IN PROGRESS
 [paridhi](https://github.com/pmalhotra21)
 
 
-<img src="https://th.bing.com/th/id/OIP.Y4qX1QgOTt33Z6-TwEkRkAHaDK?w=291&h=61&c=7&r=0&o=7&cb=12&pid=1.7&rm=3" alt="Render Logo" width="40">
+<img src="https://th.bing.com/th/id/OIP.Y4qX1QgOTt33Z6-TwEkRkAHaDK?w=291&h=61&c=7&r=0&o=7&cb=12&pid=1.7&rm=3" alt="Render Logo" width="200">
 
 
 ### **Development Teams Render Link:**
@@ -105,7 +105,7 @@ Our research included: IN PROGRESS
 
 
 
-<img src="https://webimages.mongodb.com/_com_assets/cms/mongodb-logo-rgb-j6w271g1xn.jpg" alt="MongoDB Logo" width="40">
+<img src="https://webimages.mongodb.com/_com_assets/cms/mongodb-logo-rgb-j6w271g1xn.jpg" alt="MongoDB Logo" width="200">
 
 ### **Development Teams MongoDB Link:**
 
