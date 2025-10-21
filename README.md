@@ -95,10 +95,12 @@ Our research included: IN PROGRESS
 
 [paridhi](https://github.com/pmalhotra21)
 
-<img src="https://render.com/images/logos/render-logo-primary.svg" alt="Render Logo" width="40">
+
+<img src="https://render.com/images/logos/render-logo-primary.svg" width="40" alt="Render Logo">
 
 
 ### **Development Teams Render Link:**
+
 
 
 
