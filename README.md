@@ -73,7 +73,7 @@ Our research included: IN PROGRESS
 
 ---
 ## 🖼️ Team Artifacts:
-** Meet our development team: **
+**Meet our development team:**
 [Team Member Information Link]()
 
 
