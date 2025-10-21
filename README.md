@@ -57,7 +57,7 @@ So that I can instantly discover what the food is, get nutritional facts, and fi
 
 ## 👣 KM / Value Statement
 
-APP NAME unlocks instant food recognition and information, allowing users to learn, explore, and make smarter dietary decisions. The app’s main value is in bridging the gap between curiosity and knowledge. With one photo, users access recipes, nutrition facts, and inspiration for healthier living. This empowers individuals to cook, eat better, and share food experiences.
+SnackChat unlocks instant food recognition and information, allowing users to learn, explore, and make smarter dietary decisions. The app’s main value is in bridging the gap between curiosity and knowledge. With one photo, users access recipes, nutrition facts, and inspiration for healthier living. This empowers individuals to cook, eat better, and share food experiences.
 
 
 ---
@@ -95,7 +95,7 @@ Our research included: IN PROGRESS
 
 [Joshua](https://github.com/joshuabrad03)
 
-[paridhi](https://github.com/pmalhotra21)
+[Paridhi](https://github.com/pmalhotra21)
 
 
 <img src="https://th.bing.com/th/id/OIP.Y4qX1QgOTt33Z6-TwEkRkAHaDK?w=291&h=61&c=7&r=0&o=7&cb=12&pid=1.7&rm=3" alt="Render Logo" width="200">
