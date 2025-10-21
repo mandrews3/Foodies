@@ -95,7 +95,17 @@ Our research included: IN PROGRESS
 
 [paridhi](https://github.com/pmalhotra21)
 
+<img src="https://render.com/images/logos/render-logo-primary.svg" alt="Render Logo" width="40">
+
+
 ### **Development Teams Render Link:**
+
+
+
+<img src="https://webimages.mongodb.com/_com_assets/cms/mongodb-logo-rgb-j6w271g1xn.jpg" alt="MongoDB Logo" width="140">
+
+### **Development Teams MongoDB Link:**
+
 
 
 
