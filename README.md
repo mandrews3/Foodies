@@ -97,7 +97,7 @@ Our research included: IN PROGRESS
 [paridhi](https://github.com/pmalhotra21)
 
 
-<img src="https://seeklogo.com/images/R/render-logo-4554606B51-seeklogo.com.png" alt="Render Logo" width="40">
+<img src="https://th.bing.com/th/id/OIP.Y4qX1QgOTt33Z6-TwEkRkAHaDK?w=291&h=61&c=7&r=0&o=7&cb=12&pid=1.7&rm=3" alt="Render Logo" width="40">
 
 
 ### **Development Teams Render Link:**
