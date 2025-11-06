@@ -75,7 +75,7 @@ Our research included: IN PROGRESS
 ---
 ## 🖼️ Team Artifacts:
 **Meet our development team:**
-[Team Member Information Link](https://github.com/mandrews3/Team-Project-2/wiki/Team-Members)
+[Team Member Information Link](https://github.com/mandrews3/Foodies/wiki/WIKI-Artifacts:-Team-Members)
 
 
 
