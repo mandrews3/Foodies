@@ -18,7 +18,7 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           # Use your username and IP
-          host: 35.184.201.200 
+          host: 34.60.240.8
           username: joshu
           key: ${{ secrets.SSH_SOLID_KEY }}
           # Combine all remote commands into a single script
