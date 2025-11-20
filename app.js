@@ -178,7 +178,7 @@ app.post('/api/analyze-image', upload.single('image'), async (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.send('CI/CD Pipeline Test: SUCCESS! Time: ' + new Date().toLocaleTimeString());
+  res.sendFile(path.join(__dirname, 'public', 'josh.html'));
 });
 
 app.use((err, req, res, next) => {
@@ -189,6 +189,7 @@ app.use((err, req, res, next) => {
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
 
 
 
