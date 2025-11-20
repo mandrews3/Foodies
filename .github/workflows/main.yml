@@ -1,22 +1,35 @@
-# ...
-- uses: actions/checkout@v3
-  with:
-    PRIVATE_KEY: ${{ secrets.SSH_SOLID_KEY }} 
-# ...
+name: CI/CD Deployment to Google Cloud VM
 
-# ...
-# IMPORTANT: Replace 'yourusername' and 'yourexternalip'
-- name: Deploy Code
-  run: |
-    ssh -o StrictHostKeyChecking=no -i private_key.pem -tt joshu@35.184.201.200 <<EOF
-# ...
+on:
+  push:
+    branches:
+      - main # Change this to the branch you push from (e.g., main or master)
 
-# ...
-# IMPORTANT: Replace 'your-repo-directory-name' with the name of your repo on the VM
-- name: Restart App
-  run: |
-    cd Foodies #go to repo
-    git pull #pull the latest changes
-    npm i #install any new dependencies
-    pm2 restart app #restart the app
-# ...
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          # Use 'ssh-key' instead of 'PRIVATE_KEY' for actions/checkout
+          ssh-key: ${{ secrets.SSH_SOLID_KEY }} 
+
+      - name: Deploy and Restart Application
+        uses: appleboy/ssh-action@master
+        with:
+          # Use your username and IP
+          host: 35.184.201.200 
+          username: joshu
+          key: ${{ secrets.SSH_SOLID_KEY }}
+          # Combine all remote commands into a single script
+          script: |
+            # Navigate to your repo directory
+            cd Foodies 
+            # Pull latest changes
+            git pull 
+            # Install new dependencies
+            npm install 
+            # Restart the PM2 process
+            pm2 restart app
