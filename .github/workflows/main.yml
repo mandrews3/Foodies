@@ -12,16 +12,14 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-        with:
-          # Use 'ssh-key' instead of 'PRIVATE_KEY' for actions/checkout
-          ssh-key: ${{ secrets.SSH_SOLID_KEY }} 
+          
 
       - name: Deploy and Restart Application
         uses: appleboy/ssh-action@master
         with:
           # Use your username and IP
           host: 35.184.201.200 
-          username: joshu@MSI
+          username: joshu
           key: ${{ secrets.SSH_SOLID_KEY }}
           # Combine all remote commands into a single script
           script: |
