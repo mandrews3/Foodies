@@ -11,6 +11,10 @@ const fs = require('fs');
 
 let visionClient;
 
+app.get('/', (req, res) => {
+  res.send('did it work??????????') // Change the text here
+})
+
 if (process.env.GOOGLE_VISION_KEY) {
   // Render / env-based credentials
   try {
@@ -188,4 +192,5 @@ app.use((err, req, res, next) => {
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
 
