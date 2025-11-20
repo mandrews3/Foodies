@@ -1,0 +1,22 @@
+# ...
+- uses: actions/checkout@v3
+  with:
+    PRIVATE_KEY: ${{ secrets.SSH_SOLID_KEY }} 
+# ...
+
+# ...
+# IMPORTANT: Replace 'yourusername' and 'yourexternalip'
+- name: Deploy Code
+  run: |
+    ssh -o StrictHostKeyChecking=no -i private_key.pem -tt joshu@35.184.201.200 <<EOF
+# ...
+
+# ...
+# IMPORTANT: Replace 'your-repo-directory-name' with the name of your repo on the VM
+- name: Restart App
+  run: |
+    cd Foodies #go to repo
+    git pull #pull the latest changes
+    npm i #install any new dependencies
+    pm2 restart app #restart the app
+# ...
