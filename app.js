@@ -11,9 +11,6 @@ const fs = require('fs');
 
 let visionClient;
 
-app.get('/', (req, res) => {
-  res.send('did it work??????????') // Change the text here
-})
 
 if (process.env.GOOGLE_VISION_KEY) {
   // Render / env-based credentials
@@ -181,7 +178,7 @@ app.post('/api/analyze-image', upload.single('image'), async (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'josh.html'));
+  res.send('CI/CD Pipeline Test: SUCCESS! Time: ' + new Date().toLocaleTimeString());
 });
 
 app.use((err, req, res, next) => {
@@ -192,5 +189,6 @@ app.use((err, req, res, next) => {
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
 
 
