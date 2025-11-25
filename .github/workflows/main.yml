@@ -1,33 +1,31 @@
-name: CI/CD Deployment to Google Cloud VM
+name: deploy-ideas
 
 on:
   push:
-    branches:
-      - main # Change this to the branch you push from (e.g., main or master)
+    branches: [main]
+  workflow_dispatch:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # Run this job on the latest Ubuntu version
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-          
+      - name: Start idea
+        env:
+          PRIVATE_KEY: ${{ secrets.SSH_SOLID_KEY }} # Reference the private key stored in GitHub Secrets
+        run: |
+          echo "$PRIVATE_KEY" > private_key.pem # Write the private key to a file
+          chmod 600 private_key.pem # Set the appropriate permissions for the key file
 
-      - name: Deploy and Restart Application
-        uses: appleboy/ssh-action@master
-        with:
-          # Use your username and IP
-          host: 34.60.240.8
-          username: joshu
-          key: ${{ secrets.SSH_SOLID_KEY }}
-          # Combine all remote commands into a single script
-          script: |
-            # Navigate to your repo directory
-            cd Foodies 
-            # Pull latest changes
-            git pull 
-            # Install new dependencies
-            npm install 
-            # Restart the PM2 process
-            pm2 restart app
+          # Establish an SSH connection and execute commands on the remote server
+          ssh -o StrictHostKeyChecking=no -i private_key.pem -tt joshu@34.60.240.8 <<EOF  
+            # Here Document, allows for multiple commands while connectd to server 
+            cd Foodies  #go to repo
+            npm ci
+            pm2 delete app #in case the website is currently running
+            git pull #update repo
+            pm2 start -f app.js #start the updated app
+            exit  
+          EOF
+
+          rm -f private_key.pem # Remove the private key file after use for security
