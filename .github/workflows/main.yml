@@ -1,0 +1,24 @@
+name: Deploy to Google Cloud
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Deploy to Google Cloud VM
+        env:
+          PRIVATE_KEY: ${{ secrets.SSH_SNACKCHAT_KEY }}  # Your secret name here
+        run: |
+          echo "$PRIVATE_KEY" > private_key.pem
+          chmod 600 private_key.pem
+          ssh -o StrictHostKeyChecking=no -i private_key.pem -tt joshu@34.29.15.179 <<EOF
+            cd Foodies
+            git pull origin main
+            npm install
+            pm2 restart app.js || pm2 start app.js
+            exit
+          EOF
