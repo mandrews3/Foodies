@@ -15,7 +15,7 @@ jobs:
         run: |
           echo "$PRIVATE_KEY" > private_key.pem
           chmod 600 private_key.pem
-          ssh -o StrictHostKeyChecking=no -i private_key.pem -tt joshu@34.29.15.179 <<EOF
+          ssh -o StrictHostKeyChecking=no -i private_key.pem -tt joshu@104.154.22.183 <<EOF
             cd Foodies
             git pull origin main
             npm install
