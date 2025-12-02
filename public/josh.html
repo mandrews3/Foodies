@@ -43,6 +43,35 @@
                 <p id="error-text" class="text-danger mt-2"></p>
             </div>
 
+            <!-- Divider -->
+            <div class="text-center my-3">
+                <span class="text-white fw-bold">OR</span>
+            </div>
+
+            <!-- Text Input Feature (Coming Soon) -->
+            <div class="text-center">
+                <div class="text-input-container mx-auto" style="max-width: 400px;">
+                    <div class="coming-soon-badge mb-2">
+                        <span class="badge bg-warning text-dark pulse-badge">🚀 Coming Soon!</span>
+                    </div>
+                    <form id="textInputForm">
+                        <label for="textInput" class="form-label text-white fw-bold">
+                            Describe your food in text:
+                        </label>
+                        <div class="input-group mb-2">
+                            <input type="text" id="textInput" class="form-control"
+                                placeholder="e.g., 'pepperoni pizza' or 'chocolate chip cookies'" disabled>
+                            <button type="submit" class="btn btn-secondary" disabled>
+                                🔍 Analyze
+                            </button>
+                        </div>
+                        <small class="text-white">
+                            ⏳ Text-based food analysis will be available in a future update!
+                        </small>
+                    </form>
+                </div>
+            </div>
+
 
             <!-- Loading Icon -->
             <div id="loadingSpinner" class="text-center my-3" style="display: none;">
@@ -128,6 +157,7 @@
 </body>
 
 </html>
+
 
 
 
