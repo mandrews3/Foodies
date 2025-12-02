@@ -22,8 +22,7 @@ $(document).ready(function () {
   // Generate enough emojis to fill the screen
   let emojiText = '';
   for (let i = 0; i < 1000; i++) {  
-    emojiText += emojis[Math.floor(Math.random() * emojis.length)] + ' ';
-    if (i % 30 === 0) emojiText += '\n'; 
+    emojiText += emojis[Math.floor(Math.random() * emojis.length)] + ' '; 
   }
 
   emojiBackground.text(emojiText);
@@ -118,6 +117,7 @@ $(document).ready(function () {
   });
 
 });
+
 
 
 
