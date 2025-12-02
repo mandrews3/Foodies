@@ -116,7 +116,42 @@ $(document).ready(function () {
     }, 2000);
   });
 
+    // Text Input Form - Coming Soon Feature
+  $('#textInputForm').on('submit', function (e) {
+    e.preventDefault();
+    alert('🚧 Text input feature coming soon! Please use image upload for now.');
+  });
+
+  $('#textInput').on('click', function () {
+    if ($(this).prop('disabled')) {
+      const $tooltip = $('<div>')
+        .text('🚧 This feature is under development! Check back soon.')
+        .css({
+          position: 'fixed',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          background: 'white',
+          padding: '20px 30px',
+          borderRadius: '10px',
+          boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)',
+          zIndex: 9999,
+          fontSize: '1.1rem',
+          textAlign: 'center'
+        });
+
+      $('body').append($tooltip);
+
+      setTimeout(function () {
+        $tooltip.fadeOut(function () {
+          $(this).remove();
+        });
+      }, 2000);
+    }
+  });
+
 });
+
 
 
 
