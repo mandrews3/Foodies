@@ -1,3 +1,32 @@
+// Add food emoji background
+$(document).ready(function() {
+  const emojis = ['🍕', '🍔', '🌮', '🍎', '🥗', '🍇', '🥑', '🍓', '🥕', '🍌', '🍊', '🥦', '🍉', '🥪', '🌭', '🍟', '🍞', '🥐', '🧀', '🥚'];
+  
+  const emojiBackground = $('<div>')
+    .css({
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      fontSize: '2rem',
+      opacity: 0.25,
+      pointerEvents: 'none',
+      zIndex: 0,
+      overflow: 'hidden',
+      lineHeight: '3rem'
+    });
+  
+  let emojiText = '';
+  for (let i = 0; i < 500; i++) {
+    emojiText += emojis[Math.floor(Math.random() * emojis.length)] + ' ';
+  }
+  
+  emojiBackground.text(emojiText);
+  $('body').prepend(emojiBackground);
+});
+
+
 $(document).ready(function () {
   const $form = $('#imageUploadForm');
   const $foodInfo = $('#foodInfo');
@@ -72,5 +101,18 @@ $(document).ready(function () {
       $spinner.hide();
     }
   });
+
+  $('#saveButton').on('click', function () {
+    const $message = $('#saveMessage');
+    $message.fadeIn();
+
+    setTimeout(function () {
+      $message.fadeOut();
+    }, 2000);
+  });
+
 });
+
+
+
 
