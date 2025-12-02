@@ -1,34 +1,96 @@
 body {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, rgba(255, 138, 101, 0.92) 0%, rgba(255, 94, 77, 0.92) 100%);
     min-height: 100vh;
     padding: 20px 0;
 }
+
+body>.container {
+    position: relative;
+    z-index: 1;
+}
+
 .app-header {
     background: white;
     border-radius: 10px;
     padding: 30px;
     margin-bottom: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
+
 .movie-card {
     transition: transform 0.3s ease;
     cursor: pointer;
 }
+
 .movie-card:hover {
     transform: translateY(-5px);
 }
+
 .watched-badge {
     position: absolute;
     top: 10px;
     right: 10px;
 }
+
 .rating-stars {
     color: #ffc107;
 }
+
 footer {
     background: white;
     border-radius: 10px;
     padding: 20px;
     margin-top: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.api-info-box {
+    background: #ff6b4d;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.api-info-box h5 {
+    color: #420d02;
+    font-weight: bold;
+}
+
+.api-info-box ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.btn-primary {
+    background-color: #ff6b4d !important;
+    border-color: #ff6b4d !important;
+}
+
+.btn-primary:hover {
+    background-color: #ff5e3a !important;
+    border-color: #ff5e3a !important;
+}
+
+#saveButton {
+    background-color: #ff8a65 !important;
+    border-color: #ff8a65 !important;
+    color: white;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#saveButton:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#saveButton:hover {
+    background-color: #ff7043 !important;
+    border-color: #ff7043 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
