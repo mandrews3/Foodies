@@ -1,29 +1,35 @@
 // Add food emoji background
-$(document).ready(function() {
+$(document).ready(function () {
   const emojis = ['🍕', '🍔', '🌮', '🍎', '🥗', '🍇', '🥑', '🍓', '🥕', '🍌', '🍊', '🥦', '🍉', '🥪', '🌭', '🍟', '🍞', '🥐', '🧀', '🥚'];
-  
+
   const emojiBackground = $('<div>')
     .css({
       position: 'fixed',
       top: 0,
       left: 0,
-      width: '100%',
-      height: '200%',
+      width: '100vw',
+      height: '100vh',
       fontSize: '2rem',
       opacity: 0.25,
       pointerEvents: 'none',
       zIndex: 0,
       overflow: 'hidden',
-      lineHeight: '3rem'
+      lineHeight: '3rem',
+      whiteSpace: 'pre-wrap',
+      wordWrap: 'break-word'
     });
-  
+
+  // Generate enough emojis to fill the screen
   let emojiText = '';
-  for (let i = 0; i < 500; i++) {
+  for (let i = 0; i < 1000; i++) {  
     emojiText += emojis[Math.floor(Math.random() * emojis.length)] + ' ';
+    if (i % 30 === 0) emojiText += '\n'; 
   }
-  
+
   emojiBackground.text(emojiText);
   $('body').prepend(emojiBackground);
+
+  $('.container').css('position', 'relative').css('z-index', '1');
 });
 
 
@@ -112,6 +118,7 @@ $(document).ready(function () {
   });
 
 });
+
 
 
 
