@@ -8,7 +8,7 @@ $(document).ready(function() {
       top: 0,
       left: 0,
       width: '100%',
-      height: '100%',
+      height: '200%',
       fontSize: '2rem',
       opacity: 0.25,
       pointerEvents: 'none',
@@ -112,6 +112,7 @@ $(document).ready(function () {
   });
 
 });
+
 
 
 
